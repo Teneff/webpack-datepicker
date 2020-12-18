@@ -1,4 +1,4 @@
-## Loading bootstrap-datepicker with webpack
+## Loading bootstrap-datepicker with webpack and external jQuery
 ### Webpack default config from @webpack-cli/init
 
 This project has been created using **webpack scaffold**, you can now run

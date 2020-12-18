@@ -16,7 +16,8 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "production",
+  mode: "development",
+  devtool: "eval",
 
   entry: "./src/index.js",
 
@@ -25,11 +26,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-    }),
   ],
+
+  externals: {
+    'jquery': '$',
+  },
 
   module: {
     rules: [],

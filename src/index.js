@@ -1,5 +1,5 @@
-require('bootstrap-datepicker');
+require("bootstrap-datepicker");
 
-$('.input-daterange input').each(function() {
-    $(this).datepicker('clearDates');
+$(".input-daterange input").each(function () {
+  $(this).datepicker("clearDates");
 });
